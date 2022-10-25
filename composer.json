@@ -1,0 +1,28 @@
+{
+    "name": "jigius/drom-offers",
+    "description": "Fetches offers from Drom site",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Jigius\\DromOffers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {"Test\\": "test/"}
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^5.3",
+        "phpunit/phpunit": "9.5.x-dev"
+    },
+    "authors": [
+        {
+            "name": "jigius",
+            "email": "jigius@gmail.com"
+        }
+    ],
+    "require": {
+        "jigius/httpcli": "^0.1.1",
+        "jigius/acc-core": "^0.1.0"
+    }
+}
