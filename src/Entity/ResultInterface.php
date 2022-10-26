@@ -9,17 +9,15 @@
  * @link https://github.com/jigius/drom-ads GitHub
  */
 
-namespace Jigius\DromOffers\Entity\Index;
+namespace Jigius\DromOffers\Entity;
 
-interface IndexInterface
+interface ResultInterface
 {
     /**
-     * Processes ads those have been placed in the requested index page
-     * @param int $limit
-     * @param int $offset
+     * Collects various metrics for the task processing
+     * @param string $realm
+     * @param int $num
      * @return ResultInterface
      */
-    public function processed(int $limit = 1, int $offset = 0): ResultInterface;
-    
-    public function withRequest()
+    public function withAppendCount(string $realm, int $num): ResultInterface;
 }
